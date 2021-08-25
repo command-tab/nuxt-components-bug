@@ -25,7 +25,11 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components',
+    { path: '@hzzt/v-lazy-image', pathPrefix: false },
+    { path: '@command-tab/place-kitten', pathPrefix: false }
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
